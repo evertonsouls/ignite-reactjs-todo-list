@@ -1,6 +1,13 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
+import { App } from './App'
+
+import './styles/index.css'
 
 const rootElement = document.getElementById('root')
 
-createRoot(rootElement!).render(<React.StrictMode>Hola</React.StrictMode>)
+createRoot(rootElement!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
